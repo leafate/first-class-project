@@ -1,25 +1,599 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<title>Breathin - Ariana Grande</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nothing+You+Could+Do|Open+Sans+Condensed:300i|Fredericka+the+Great|Cutive+Mono" rel="stylesheet">
+
+
+<style>
+    /* CSS CODE */
+
+    .img-1 {
+        background-image: url(images/top.png);
+        background-size: cover;
+    }
+
+    .img-2 {
+        background-image: url(images/img2.png);
+        background-size: cover;
+    }
+
+    .img-3 {
+        background-image: url(images/img3.png);
+        background-size: cover;
+    }
+
+    .img-4 {
+        background-image: url(images/img4.png);
+        background-size: cover;
+    }
+
+    .img-5 {
+        background-image: url(images/img5.png);
+        background-size: cover;
+    }
+
+    .img-6 {
+        background-image: url(images/img6.png);
+        background-size: cover;
+    }
+
+    .img-7 {
+        background-image: url(images/img7.png);
+        background-size: cover;
+    }
+
+    .img-8 {
+        background-image: url(images/img8.png);
+        background-size: cover;
+    }
+
+    .img-9 {
+        background-image: url(images/img9.png);
+        background-size: cover;
+
+    }
+
+    .img-10 {
+        background-image: url(images/img10.png);
+        background-size: cover;
+
+    }
+
+    .img-11 {
+        background-image: url(images/img11.png);
+        background-size: cover;
+
+    }
+
+    .img-12 {
+        background-image: url(images/img12.png);
+        background-size: cover;
+
+    }
+
+    .img-13 {
+        background-image: url(images/img13.png);
+        background-size: cover;
+
+    }
+
+    .img-14 {
+        background-image: url(images/img14.png);
+        background-size: cover;
+
+    }
+
+    .img-15 {
+        background-image: url(images/img15.png);
+        background-size: cover;
+
+    }
+
+    .img-16 {
+        background-image: url(images/img16.png);
+        background-size: cover;
+
+    }
+
+    .img-17 {
+        background-image: url(images/img17.png);
+        background-size: cover;
+
+    }
+
+    .img-18 {
+        background-image: url(images/img18.png);
+        background-size: cover;
+
+    }
+
+    .black {
+        background-image: url(images/black.png);
+        background-size: cover;
+
+    }
+
+
+
+
+    .lyric-style {
+        font-family: 'Cutive Mono', monospace;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+        font-size: 16pt;
+        color: rgb(240, 171, 111);
+        line-height: 25px;
+
+    }
+
+
+    .lyric-1 {
+        font-family: 'Cutive Mono', monospace;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+        font-size: 16pt;
+        color: rgb(240, 171, 111);
+        line-height: 25px;
+        width: 50%;
+        left: 80px;
+
+    }
+
+    .lyric-2 {
+        font-family: 'Cutive Mono', monospace;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+        font-size: 16pt;
+        color: rgb(240, 171, 111);
+        line-height: 25px;
+        width: 93%;
+        text-align: right;
+    }
+
+    .spinning {
+        font-family: 'Cutive Mono', monospace;
+        text-align: right;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 14pt;
+        color: rgb(240, 171, 111);
+    }
+
+    @keyframes spinning {
+        from {
+            transform: rotateX(0deg);
+        }
+        to {
+            transform: rotateX(360deg);
+        }
+    }
+
+    .spin-effect {
+        display: inline-block;
+        animation-name: spinning;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+
+
+    .lyric-3 {
+        font-family: 'Cutive Mono', monospace;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 30pt;
+        color: rgb(240, 171, 111);
+        line-height: 25px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .opacity80 {
+        opacity: 0.2;
+    }
+
+    .opacity60 {
+        opacity: 0.4;
+    }
+
+    .opacity40 {
+        opacity: 0.6;
+    }
+
+    .opacity20 {
+        opacity: 0.8;
+    }
+
+    .opacity0 {
+        opacity: 1;
+    }
+
+    /*I can so overcomplicated, people tell me to medicate*/
+
+    .lyric-4 {
+        text-align: left;
+        padding-left: 85px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .medicate {
+        text-align: left;
+        padding-left: 0px;
+        line-height: 20px;
+
+
+    }
+
+    /*feel my, running*/
+
+    .lyric-5 {
+        text-align: center;
+        font-family: 'Fredericka the Great', cursive;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: 35pt;
+        color: white;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    /*time goes by and I*/
+
+    .lyric-7 {
+        text-align: left;
+        color: white;
+        padding-left: 85px;
+        line-height: 25px;
+        width: 100%;
+
+    }
+
+    /*Don't know what else to try*/
+
+    .lyric-8 {
+        text-align: right;
+        color: white;
+        padding-right: 20px;
+        line-height: 25px;
+        width: 93%;
+    }
+
+    /*Breathin*/
+
+    .Breathin {
+        font-family: 'Fredericka the Great', cursive;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 40px;
+
+
+    }
+
+    .air {
+        font-family: 'Fredericka the Great', cursive;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+
+    }
+
+    .size60 {
+        font-size: 60px;
+    }
+
+    .size80 {
+        font-size: 80px;
+    }
+
+    .size100 {
+        font-size: 100px;
+    }
+
+
+    .point {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+    .medicate {
+        padding-left: 100px;
+
+    }
+
+    .size {
+        font-size: 14px;
+    }
+
+    .downshift {
+        display: inline-block;
+        font-size: 5rem;
+        transform: rotate(20deg);
+    }
+
+    .blood {
+        text-align: center;
+        font-family: 'Nothing You Could Do', cursive;
+        font-weight: 100;
+        letter-spacing: 10px;
+        font-size: 40pt;
+        width: 100%;
+        color: red;
+    }
+
+    .lyric-6 {
+        text-align: center;
+        font-family: 'Fredericka the Great', cursive;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: 70pt;
+        color: white;
+        width: 100%;
+        line-height: 60px;
+    }
+
+    .how-do-i {
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-align: center;
+        color: white;
+
+        width: 100%;
+        font-size: 13pt;
+    }
+
+    .keepon {
+        text-align: left;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        width: 50%;
+        padding-left: 100px;
+        font-size: 30pt;
+        line-height: 35px;
+    }
+
+    .keepon2 {
+        text-align: right;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        width: 93%;
+        font-size: 30pt;
+        line-height: 35px;
+    }
+
+</style>
 
 <head>
-    <title>My first web project</title>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-100 quarter img-1"></div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-100 quarter img-2">
+                <p class="lyric-1 top-40">Some days<br> things just take way<br> too much of my energy</p>
+
+                <p class="lyric-2 top-40">I look up<br> and the whole world is <br><span class="spin-effect">spinning</span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-100 quarter img-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-100 quarter img-4">
+                <p class="lyric-3 opacity80 top-0">You take my cares away</p>
+                <p class="lyric-3 opacity60 top-5">You take my cares away</p>
+                <p class="lyric-3 opacity40 top-15">You take my cares away</p>
+                <p class="lyric-3 opacity20 top-30">You take my cares away</p>
+                <p class="lyric-3 top-50">You take my cares away</p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-100 quarter img-5">
+
+                <p class="lyric-style lyric-4 top-10">I can so overcomplicated</p>
+                <p class="lyric-style medicate top-20">people tell me to medicate</p>
+
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-6"></div>
+                <p class="lyric-style lyric-5 top-60">FEEL<br>MY</p>
+
+
+                <p class="lyric-style lyric-5 top-80">RUNNING</p>
+                <p class="lyric-style blood top-75">BLOOD</p>
+
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-7">
+
+                    <p class="lyric-style lyric-6 top-10">SWEAR<br>THE<br>SKY'S<br>FALLING</p>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-100 quarter img-8">
+                    <p class="lyric-style how-do-i top-0">How do I make this shit fabricated?</p>
+                    <p class="lyric-style lyric-7 top-60">Time goes by and I<br>can't control my mind</p>
+                    <p class="lyric-style lyric-8 top-80">Don't know what else to try<br>but you tell me everytime</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-9">
+                    <p class="lyric-style point top-50">......</p>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-10">
+                    <p class="lyric-style Breathin size40 top-20">Just keep breathin'</p>
+                    <p class="lyric-style Breathin size60 top-30">and breathin'</p>
+                    <p class="lyric-style Breathin size80 top-43">and breathin'</p>
+                    <p class="lyric-style Breathin size100 top-60">and breathin'</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-11">
+                    <p class="lyric-style keepon top-0">And oh<br>I gotta keep<br>keep on breathin'</p>
+                    <p class="lyric-style keepon2 top-0">And oh<br>I gotta keep<br>keep on breathin'</p>
+
+                    <p class="lyric-style point top-80">hmm...</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-12">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-13">
+                    <p class="lyric-1 top-0">Sometimes it's hard to find<br>find my way up into the clouds<br>Tune it out<br>they can be so loud </p>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-14">
+                    <p class="lyric-2 top-20">You remind me of a time<br>when things weren't so complicated<br> All I need is to see your face</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-15">
+                    <p class="lyric-style lyric-5 top-0">FEEL<br>MY</p>
+                    <p class="lyric-style lyric-5 top-25">RUNNING</p>
+                    <p class="lyric-style blood top-20">BLOOD</p>
+                    <p class="lyric-style lyric-6 top-50">SWEAR<br>THE<br>SKY'S</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-16">
+                    <p class="lyric-style lyric-6 top-0">FALLING</p>
+                    <p class="lyric-style how-do-i top-30">How do I make this shit fabricated?</p>
+                    <p class="lyric-style lyric-7 top-80">Time goes by and I<br>can't control my mind</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-17">
+                    <p class="lyric-style lyric-8 top-0">Don't know what else to try<br>but you tell me everytime</p>
+
+                    <p class="lyric-style point top-60">......</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-100 quarter img-10">
+                    <p class="lyric-style Breathin size40 top-20">Just keep breathin'</p>
+                    <p class="lyric-style Breathin size60 top-30">and breathin'</p>
+                    <p class="lyric-style Breathin size80 top-43">and breathin'</p>
+                    <p class="lyric-style Breathin size100 top-60">and breathin'</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-11">
+                    <p class="lyric-style keepon top-0">And oh<br>I gotta keep<br>keep on breathin'</p>
+                    <p class="lyric-style keepon2 top-0">And oh<br>I gotta keep<br>keep on breathin'</p>
+
+                    <p class="lyric-style point top-80">hmm...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 quarter img-12">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 quarter black">
+                    <p class="lyric-style air size40 top-0">My, my air<br> My, my air<br> My, my air, my air<br> My, my air<br> My, my air<br> My, my air, yeah</p>
+                    <p class="lyric-style air opacity80 color size80 top-0">My, my air<br> My, my air<br> My, my air, my air<br> My, my air<br> My, my air<br> My, my air, yeah</p>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter black">
+
+                    <p class="lyric-style Breathin size40 top-90">Just keep breathin'</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-10">
+
+                    <p class="lyric-style Breathin size60 top-10">and breathin'</p>
+                    <p class="lyric-style Breathin size80 top-35">and breathin'</p>
+                    <p class="lyric-style Breathin size100 top-65">and breathin'</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-11">
+                    <p class="lyric-style keepon top-30">And oh<br>I gotta keep<br>keep on breathin'</p>
+                    <p class="lyric-style keepon2 top-30">And oh<br>I gotta keep<br>keep on breathin'</p>
+
+                    <p class="lyric-style point top-90">hmm...yeah</p>
+                    <p class="lyric-style lyric-5 opacity80 top-0">FEEL<br>MY</p>
+                    <p class="lyric-style lyric-5 opacity80 top-25">RUNNING</p>
+                    <p class="lyric-style blood opacity80 top-20">BLOOD</p>
+                    <p class="lyric-style lyric-6 opacity80 top-50">SWEAR<br>THE<br>SKY'S</p>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-100 quarter img-12">
+                    <p class="lyric-style point size top-80">Breathin - Ariana Grande</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </body>
+
+
 </head>
 
-<body>
-    <h1>Heading</h1>
 
-    <h2>Heading</h2>
-
-    <h3>Heading</h3>
-
-    <h4>Heading</h4>
-
-    <h5>Heading</h5>
-
-    <h6>Heading</h6>
-
-    <p> TEXTS</p>
-</body>
 
 
 </html>
